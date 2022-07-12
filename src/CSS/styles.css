@@ -1,4 +1,4 @@
-/* se definen medidas y colores en root  */
+/* se definen medidas/colores/tipografias en root  */
 :root {
   --primerColor: #120f64;
   --segundoColor: #ee0d5b;
@@ -6,6 +6,8 @@
   --gray: #747474;
   --white: #ffffff;
   --black: #000000;
+  --celeste: #11c4f1;
+  --letraXss: 1.2rem;
   --letraXs: 1.5rem;
   --icon: 2rem;
   --letraS: 2rem;
@@ -27,7 +29,7 @@ html {
 body {
   display: grid;
   grid-auto-flow: row;
-  grid-template-rows: 55rem 4fr 1fr;
+  grid-template-rows: 55rem 4fr 30rem;
   background-image: linear-gradient(
     90deg,
     var(--primerColor),
@@ -65,8 +67,7 @@ body {
 }
 
 /* inicio contenedores de boton de redes sociales  */
-.nav__card-youtube,
-.nav__card-discord {
+.nav__card {
   font-size: var(--letraXs);
   font-family: var(--orbitron);
   letter-spacing: 0.1rem;
@@ -85,31 +86,27 @@ body {
   margin: 1.5rem 0;
 }
 
-.card-youtube__description,
-.card-discord__description {
+.nav__card__description {
   width: 16rem;
 }
 
-.card-youtube__icon,
-.card-discord__icon {
+.nav__card__icon {
   display: grid;
   place-self: center;
   margin: 1rem;
 }
 
-.card-youtube__icon2,
-.card-discord__icon2 {
+.nav__card__icon2 {
   font-size: var(--icon);
 }
 
-.card-youtube__titulo,
-.card-discord__titulo {
+.nav__card__titulo {
   font-size: var(--letraXs);
   margin-bottom: 0.5rem;
+  letter-spacing: .1rem;
 }
 
-.card-youtube__description2,
-.card-discord__description2 {
+.nav__card__description2 {
   font-size: var(--letraXs);
   color: var(--segundoColor);
 }
@@ -140,16 +137,52 @@ main{
   display: grid;
   background-color: var(--tercerColor);
   border-radius: 3rem;
+  border-bottom: 0.5rem solid var(--segundoColor);
   
 }
 .section__titulo {
   font-size: var(--letraXs);
   letter-spacing: .5rem;
   padding: 3rem 0;
-  color: var(--white);
+  color: var(--celeste);
   text-align: center;
   border-bottom: 0.5rem solid var(--segundoColor);
   border-radius: 1rem;
+}
+
+.section__titulo2{
+  font-size: var(--letraXss);
+  letter-spacing: .5rem;
+  padding-top: 3rem;
+  padding-left: 3rem;
+  color: var(--celeste);
+}
+
+.section__titulo3{
+  font-size: var(--letraXss);
+  letter-spacing: .5rem;
+  padding-top: 1.5rem;
+  padding-left: 3rem;
+  border-bottom: 0.5rem solid var(--segundoColor);
+  color: var(--segundoColor);
+  padding-bottom: 2rem;
+  border-radius: 1rem;
+}
+
+.section__text{
+  font-size: var(--letraXs);
+  line-height: 3rem;
+  letter-spacing: .5rem;
+  padding: 3rem;
+  color: var(--white);
+}
+
+.rose{
+  color: var(--segundoColor);
+}
+
+.celeste{
+  color: var(--celeste)
 }
 
 .section__ul__li {
@@ -157,7 +190,6 @@ main{
   letter-spacing: .2rem;
   margin: 4rem;
   color: var(--white);
-  list-style: none;
 }
 
 .section__button {
@@ -174,3 +206,52 @@ main{
   margin: 3rem;
 
 }
+
+/* fin main */
+
+/* inicio footer */
+.footer {  
+  font-family: var(--orbitron);
+  width: 100%;
+  display: grid;
+  background-color:var(--tercerColor);
+  align-items: center;
+}
+
+.ul{
+  margin-bottom: none;
+
+}
+
+.ul__li {
+  font-size: var(--letraXs);
+  letter-spacing: .2rem;
+  list-style: none;
+  margin: 3rem 0;
+  color: var(--white);
+  padding: 1rem;
+  transition: all .2s;
+}
+
+.ul__li--d:hover{
+  border-bottom: 0.3rem solid var(--segundoColor);
+
+}
+
+.ul__li--w:hover, .ul__li--y:hover {
+  border-bottom: 0.3rem solid var(--celeste);
+
+}
+
+.ul__li__a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.ul__li__icon {
+  font-size: var(--icon);
+  margin:.5rem;
+}
+
+
+/* fin footer */
