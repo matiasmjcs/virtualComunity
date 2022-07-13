@@ -1,0 +1,39 @@
+/* inicio body */
+body{
+    grid-template-rows: 60rem 4fr 30rem;
+}
+
+.nav__body{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    align-items: center;
+    height: 50rem;
+}
+/* fin body */
+/* inicio header */
+.nav__image-logo{
+    display: grid;
+    grid-column: 2/3;
+}
+.nav__image-logo2{
+    width: 40rem;
+}
+
+/* fin header */
+/* inicio main */
+.section{
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+}
+
+.nav__card--y{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.nav__card--d{
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+/* fin main */

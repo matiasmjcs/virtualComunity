@@ -8,19 +8,22 @@
     <link rel="icon" href="/src/img/logo1.png">
     <link rel="stylesheet" href="/src/CSS/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/CSS/desktop.css" Media="(min-width: 75rem)"> 
 </head>
 <body>
     <script src="https://kit.fontawesome.com/7c25cd2572.js" crossorigin="anonymous"></script>
     <header class="header">
         <nav class="nav">
             <div class="nav__bar">
-                <div class="nav__profile-avatar"></div>
+                <a href="index.html" class="nav__bar__icon">
+                    <i class="nav__bar__icon2 fa-solid fa-house"></i>
+                </a>
             </div>
             <div class="nav__body">
                 <div class="nav__image-logo">
-                    <img class="nav__image-logo2" src="/src/img/logo1.png" alt="">
+                    <img class="nav__image-logo2" src="/src/img/logo1.png" alt="logotipo">
                 </div>
-                <div class="nav__card">
+                <div class="nav__card nav__card--y">
                     <div class="nav__card__icon">
                         <i class="nav__card__icon2 fa-brands fa-youtube"></i>
                     </div>
@@ -29,7 +32,7 @@
                         <span class="nav__card__description2">click aqui</span>
                     </div>
                 </div>
-                <div class="nav__card">
+                <div class="nav__card nav__card--d">
                     <div class="nav__card__icon">
                         <i class="nav__card__icon2 fa-brands fa-discord"></i>
                     </div>
@@ -41,23 +44,22 @@
         </nav>
     </header>
     <main class="main">
-        <section class="section">
 
-            <article class="section__article">
-                <h1 class="section__titulo2">
-                    VirtualRP
-                </h1>
-                <h3 class="section__titulo3">Bienbenido al Sitio Web <span class="celeste">Oficial</span> </h3>
+        <section class="section--welcome">
+            <article class="section__article--welcome">
                 <p class="section__text">
                     Bienbenido al Sitio Web Oficial de <span class="rose">VirtualRP</span> <br>
                     podras encontrar los mejores productos/servicios como: <br> <br>
-                    <span class="celeste">Planes-Virtual-Host</span> <br> 
-                    <span class="rose">Soportes-servicios </span> <br>
+                    <span class="celeste">Planes-Virtual-Host <br> 
+                    Soportes-servicios <br>
                     Roles Vip <br> 
-                    <span class="rose">las mejores ofertas</span> <br>
-                    <span class="celeste">¡Y Mucho Mas!</span>
+                    las mejores ofertas <br>
+                    ¡Y Mucho Mas!</span>
                 </p>
             </article>
+        </section>
+
+        <section class="section">
 
             <article class="section__article">
                 <h1 class="section__titulo">
@@ -84,7 +86,7 @@
                     <li class="section__ul__li">Rol Juggernaut</li>
                     <li class="section__ul__li">Rol Presidente de Casino</li>
                     <li class="section__ul__li">Rol Guardia</li>
-                    <li class="section__ul__li">Rol Armagedon</li>
+                    <!-- <li class="section__ul__li">Rol Armagedon</li> -->
                 </ul>
                 <button class="section__button" type="">Ver Mas</button>
             </article>
@@ -96,7 +98,7 @@
                     <li class="section__ul__li">Soporte Tecnico Inicial</li> 
                     <li class="section__ul__li">Servicio de Configuracion "vanilla"-"semiVanilla"</li> 
                     <li class="section__ul__li">Servicio de Configuracion RolePlay Basica</li>                 
-                    <li class="section__ul__li">Servicio de Configuracion RolePlay Media</li>   
+                    <!-- <li class="section__ul__li">Servicio de Configuracion RolePlay Media</li>    -->
                     <li class="section__ul__li">Servicio de Configuracion RolePlay Avanzada</li>      
                     <li class="section__ul__li">Personalizado</li>   
                 </ul>
@@ -108,7 +110,7 @@
                 </h1>
                 <ul class="section__ul">
                     <li class="section__ul__li">Plan Virtual Basico</li> 
-                    <li class="section__ul__li">Plan Virtual Pro</li>                  
+                    <li class="section__ul__li">Plan Virtual Pro</li> 
                 </ul>
                 <button class="section__button" type="">Ver Mas</button>
             </article>
@@ -117,8 +119,10 @@
                     Informacion/Extras
                 </h1>
                 <ul class="section__ul">
-                    <li class="section__ul__li">Términos y condiciones del Marketing Vip de Virtual Community</li> 
-                    <li class="section__ul__li">Informacion de Método de pago</li>    
+                    <li class="section__ul__li">Términos y condiciones</li> 
+                    <li class="section__ul__li">Informacion de Método de pago</li>  
+                       
+                
                 </ul>
                 <button class="section__button" type="">Ver Mas</button>
             </article>
